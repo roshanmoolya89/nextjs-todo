@@ -1,13 +1,62 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fbfbfb;
+  --foreground: #dce1e1;
 }
 
 @theme inline {
+  /* Base Colors */
+  --color-primary: #c4abcd;
+  --color-secondary: #0f0f0f;
+  --color-accent: #eec0fc;
+
+  /* AUTO SHADES (Primary) */
+  --color-primary-50: color-mix(in srgb, var(--color-primary), white 85%);
+  --color-primary-100: color-mix(in srgb, var(--color-primary), white 70%);
+  --color-primary-200: color-mix(in srgb, var(--color-primary), white 55%);
+  --color-primary-300: color-mix(in srgb, var(--color-primary), white 40%);
+  --color-primary-400: var(--color-primary);
+  --color-primary-500: color-mix(in srgb, var(--color-primary), black 10%);
+  --color-primary-600: color-mix(in srgb, var(--color-primary), black 20%);
+  --color-primary-700: color-mix(in srgb, var(--color-primary), black 35%);
+
+  /* Optional: Secondary Shades */
+  --color-secondary-50: color-mix(in srgb, var(--color-secondary), white 85%);
+  --color-secondary-100: color-mix(in srgb, var(--color-secondary), white 70%);
+  --color-secondary-200: color-mix(in srgb, var(--color-secondary), white 55%);
+  --color-secondary-300: color-mix(in srgb, var(--color-secondary), white 15%);
+  --color-secondary-400: var(--color-secondary);
+  --color-secondary-500: color-mix(in srgb, var(--color-secondary), white 10%);
+  --color-secondary-600: color-mix(in srgb, var(--color-secondary), black 10%);
+  --color-secondary-700: color-mix(in srgb, var(--color-secondary), black 20%);
+  --color-secondary-800: color-mix(in srgb, var(--color-secondary), black 30%);
+
+  /* Optional: Accent Shades */
+  --color-accent-50: color-mix(in srgb, var(--color-accent), white 85%);
+  --color-accent-100: color-mix(in srgb, var(--color-accent), white 70%);
+  --color-accent-200: color-mix(in srgb, var(--color-accent), white 55%);
+  --color-accent-300: color-mix(in srgb, var(--color-accent), white 40%);
+  --color-accent-400: var(--color-accent);
+  --color-accent-500: color-mix(in srgb, var(--color-accent), black 10%);
+
+  /* Background */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  /* Text */
+  --color-text-primary: #0f0f0f;
+  --color-text-secondary: #9d9c9d;
+
+  /* Extras */
+  --color-border: #dce1e1;
+  --color-muted: #4b494a;
+
+  /* UPI UI Tokens */
+  --color-radio-selected: var(--color-primary-500);
+  --color-radio-border: var(--color-border);
+  --color-radio-active: var(--color-accent-500);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

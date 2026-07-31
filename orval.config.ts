@@ -9,6 +9,6 @@ export default defineConfig({
       clean: true,
       formatter: "prettier",
     },
-    input: "",
+    input: "http://localhost:8080/api/v1/docs.yaml",
   },
 });
